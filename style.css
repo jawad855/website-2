@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+/* custome scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1abc9c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: crimson;
+}
+
+/* up button */
+
+.up {
+  position: absolute;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 93%;
+  left: 96%;
+  background-color: crimson;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.up a {
+  color: #fff;
+}
+
+/* nav */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #2c3e50;
+  border-top: 3px solid crimson;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+header li {
+  display: inline-block;
+  list-style: none;
+  transition: 0.3s ease;
+}
+
+header a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+header a:hover {
+  color: #1abc9c;
+}
+
+header li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+/* home */
+#Home {
+  height: 100vh;
+  background-image: url(imgs/img1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-position: center;
+}
+
+#Home .hero-content {
+  padding: 50px;
+}
+
+#Home .hero-content h2 {
+  color: #fff;
+}
+
+#Home .hero-content h2 span {
+  color: crimson;
+}
+
+#Home .hero-content p {
+  max-width: 500px;
+  margin: 20px 0;
+  font-size: 17px;
+  color: #fff;
+}
+
+#Home .hero-content a {
+  text-decoration: none;
+  background: #1abc9c;
+  padding: 6px 15px;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s ease; /* صححنا هنا */
+}
+
+#Home .hero-content a:hover {
+  background: #fff;
+  color: #1abc9c;
+}
+
+/* services */
+#services h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#services .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  flex-wrap: wrap;
+}
+
+#services .container .card {
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  margin: 15px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 6px 6px #ccc;
+}
+
+#services .container .card h3 {
+  color: crimson;
+}
+
+#services .container .card .icon {
+  font-size: 50px;
+  color: #2c3e50;
+}
+
+/* Portfolio */
+
+#portfolio {
+  background-color: #2c3e50;
+  text-align: center;
+}
+
+#portfolio h2 {
+  padding: 30px 0 10px 0;
+  margin-bottom: 50px;
+  color: #fff;
+  display: inline-block;
+  border-bottom: solid crimson;
+}
+
+#portfolio .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  flex-wrap: wrap;
+}
+
+#portfolio .container .card {
+  background-color: #fff;
+  border: solid 3px #000;
+  border-radius: 15px;
+  margin: 0px 15px 50px 15px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#portfolio .container .card img {
+  height: 250px;
+}
+
+#portfolio .container .card .content {
+  padding: 20px;
+  height: 50%;
+}
+#portfolio .container .card .content p {
+  padding-bottom: 15px;
+}
+
+#portfolio .container .card .content button {
+  margin-top: 15px;
+  background-color: #1abc9c;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 6px;
+}
+
+#portfolio .container .card .content button a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #fff;
+}
+
+#course .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+#course .container .gif {
+  flex-basis: 40%;
+}
+
+#course .container .gif img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#course .container .content {
+  flex-basis: 50%;
+}
+
+#course .container .content h2 {
+  color: crimson;
+}
+
+#course .container .content p {
+  color: #2c3e50;
+}
+
+/* about */
+
+#about {
+  background-image: url(imgs/img1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+#about .title h2 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+#about .img {
+  display: flex;
+}
+
+#about img {
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  border-radius: 50%;
+  border: solid 2px crimson;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+footer p {
+  padding: 20px 0;
+}
+/* contact */
+
+#contact {
+  margin: 100px 100px 0 100px;
+  background: #2c3e50;
+  border-radius: 20px;
+  background: linear-gradient(
+    105deg,
+    rgba(44, 62, 80, 1) 0%,
+    rgba(26, 188, 156, 1) 62%
+  );
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr );
+  grid-template-areas:
+    "title title"
+    "name mail"
+    "phone address"
+    "message message"
+    "message message";
+}
+
+#contact h2 {
+  padding: 20px;
+  color: #fff;
+}
+
+#contact input,
+#contact textarea {
+  margin: 30px;
+  padding: 15px;
+  outline: none;
+  border: none;
+}
+
+#contact h2 {
+  grid-area: title;
+  text-align: center;
+}
+
+#contact .name {
+  grid-area: name;
+}
+
+#contact .mail {
+  grid-area: mail;
+}
+
+#contact .phone {
+  grid-area: phone;
+}
+
+#contact .address {
+  grid-area: address;
+}
+
+#contact .message {
+   grid-area: message;
+    max-width: 200%;    
+    resize: vertical;
+}
+
+/*map*/
+
+#map {
+  padding: 100px;
+}
+
+#map div {
+  width: 100%;
+  box-shadow: 3px 3px 6px 6px #ccc;
+  border-radius: 20px;
+  justify-content: center;
+  display: flex;
+  padding: 10px 0;
+}
